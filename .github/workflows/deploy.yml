@@ -1,9 +1,8 @@
 name: Streamlit Deploy
 
+# Add workflow_dispatch for manual trigger
 on:
-  push:
-    branches:
-      - master  # Deploy only when changes are pushed to the master branch
+  workflow_dispatch:  # This allows you to trigger the workflow manually
 
 jobs:
   deploy:
